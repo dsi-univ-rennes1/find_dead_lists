@@ -7,20 +7,20 @@ At University of Rennes 1, we built this process to detect inactive mailing list
 ## The process
 
 1. detecting inactive/ead lists: the script loads all lists data to find inactive ones.
- * it checks:
-  * latest distribution date,
-  * if defined owners are valid addresses
-  * creation date
-  * number of list members
- * excluded from this process are:
-  * lists attached to a family,
-  * closed already lists,
-  * lists included by another list,
-  * lists tagged as "to_keep" (using custom_vars)
+  * it checks:
+    * latest distribution date,
+    * if defined owners are valid addresses
+    * creation date
+    * number of list members
+  * excluded from this process are:
+    * lists attached to a family,
+    * closed already lists,
+    * lists included by another list,
+    * lists tagged as "to_keep" (using custom_vars)
 2. performing actions
- * low inactivity level: keep the list open,
- * medium inactivity level: notify list owners that we plan to close the list,
- * high inactivity level: close the list.
+  * low inactivity level: keep the list open,
+  * medium inactivity level: notify list owners that we plan to close the list,
+  * high inactivity level: close the list.
  
 You will have to run the script 3 times and do some manual checks in the CSV file between runs.
  
@@ -60,6 +60,7 @@ First check what the script plan to do:
 
 Then run it for real:
 `./find_dead_lists.pl --do_cleanup  --csv=actions.csv | tee cleanup.log`
+
 
 ### Manual edition of actions.csv, given list owners feedback
 
