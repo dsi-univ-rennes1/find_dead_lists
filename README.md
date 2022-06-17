@@ -61,7 +61,6 @@ First check what the script plan to do:
 Then run it for real:
 `./find_dead_lists.pl --do_cleanup  --csv=actions.csv | tee cleanup.log`
 
-
 ### Manual edition of actions.csv, given list owners feedback
 
 You might have 3 situations:
