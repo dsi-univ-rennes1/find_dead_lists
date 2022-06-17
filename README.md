@@ -48,8 +48,7 @@ The `actions.csv` file will include the following actions:
 * NOTIFY : notify list owners that we plan to close their list
 * CLOSE : liste can be closed without notification
 
-
-### Manual edition of actions.csv
+### Manual editing of actions.csv
 
 Edit the `actions.csv`, having a closer look at VERIFY entries.
 
@@ -61,7 +60,7 @@ First check what the script plan to do:
 Then run it for real:
 `./find_dead_lists.pl --do_cleanup  --csv=actions.csv | tee cleanup.log`
 
-### Manual edition of actions.csv, given list owners feedback
+### Manuel editing of actions.csv, given list owners feedback
 
 You might have 3 situations:
 1. your notification bounced => either find valid listowners or plan to close that list
