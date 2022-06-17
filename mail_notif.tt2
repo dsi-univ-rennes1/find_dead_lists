@@ -1,0 +1,19 @@
+From: "DSI - Services Numeriques" <listmaster@FQDN>
+To: [% to.join(',') %]
+Subject: Fermeture de la liste [% list.name %]
+
+Bonjour,
+
+Vous recevez ce mail automatique car vous êtes propriétaire ou modérateur de la liste [% list.name %]@[% list.domain %].
+
+Informations sur la liste :
+  * page d'accueil de la liste : https://[% list.domain %]/wws/info/[% list.name %]
+[%- IF list.creation %]
+  * date de création : [% list.creation %]
+[% END -%]
+  * dernier mail diffusé dans la liste : [% list.latest %]
+  * nombre de membres de la liste : [% list.members %]
+
+Compte-tenu de ces éléments, la DSI considère que cette liste n'est plus active et qu'elle peut probablement être fermée. Sans réponse de votre part, à la date du [% date_fermeture %] celle-ci sera fermée automatiquement. Si vous souhaitez conserver cette liste ouverte, vous devez nous le faire savoir par retour à ce message.
+
+La DSI

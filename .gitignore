@@ -1,0 +1,5 @@
+confCleanup.pm
+*.csv
+*.log
+*.txt
+
